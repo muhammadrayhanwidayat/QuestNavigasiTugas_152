@@ -30,7 +30,7 @@ fun Welcome(navController: NavController) {
                     .size(200.dp)
                     .padding(bottom = 16.dp)
             )
-            Text("20230140200", style = MaterialTheme.typography.headlineLarge)
+            Text("20230140152", style = MaterialTheme.typography.headlineLarge)
             Button(onClick = { navController.navigate("list") }) {
                 Text("Lihat Daftar Peserta")
             }

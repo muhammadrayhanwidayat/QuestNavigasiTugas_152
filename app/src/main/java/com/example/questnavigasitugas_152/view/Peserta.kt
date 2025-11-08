@@ -23,12 +23,12 @@ data class PesertaData(
 @Composable
 fun Peserta(navController: NavController) {
     val daftarPeserta = listOf(
-        PesertaData("Rina Aulia", "Perempuan", "Belum Menikah", "Bantul"),
-        PesertaData("Dimas Fadli", "Laki-laki", "Menikah", "Yogyakarta"),
-        PesertaData("Siti Rahmawati", "Perempuan", "Belum Menikah", "Sleman"),
-        PesertaData("Andi Pratama", "Laki-laki", "Belum Menikah", "Bantul"),
-        PesertaData("Lutfi Hidayat", "Laki-laki", "Menikah", "Kulon Progo"),
-        PesertaData("Nisa Azzahra", "Perempuan", "Belum Menikah", "Gunung Kidul")
+        PesertaData("Jokowidodo", "Laki-laki", "Belum Menikah", "Bantul"),
+        PesertaData("Nanda agung", "Laki-laki", "Menikah", "Yogyakarta"),
+        PesertaData("Kanade Yoisaki", "Perempuan", "Belum Menikah", "Sleman"),
+        PesertaData("Kazuma", "Laki-laki", "Belum Menikah", "Bantul"),
+        PesertaData("Naruto", "Laki-laki", "Menikah", "Kulon Progo"),
+        PesertaData("Sitri Smart", "Perempuan", "Belum Menikah", "Gunung Kidul")
     )
 
     Scaffold(
