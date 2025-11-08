@@ -94,3 +94,18 @@ fun FormulirScreen(navController: NavController) {
                         ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedStatus)
                     }
                 )
+                ExposedDropdownMenu(
+                    expanded = expandedStatus,
+                    onDismissRequest = { expandedStatus = false }
+                ) {
+                    statusList.forEach { option ->
+                        DropdownMenuItem(
+                            text = { Text(option) },
+                            onClick = {
+                                status = option
+                                expandedStatus = false
+                            }
+                        )
+                    }
+                }
+            }
