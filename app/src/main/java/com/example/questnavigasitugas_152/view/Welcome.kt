@@ -121,3 +121,12 @@ fun FormulirScreen(navController: NavController) {
             Spacer(Modifier.height(16.dp))
 
             Button(onClick = { showDialog = true }) { Text("Submit") }
+
+            if (showDialog) {
+                AlertDialog(
+                    onDismissRequest = { showDialog = false },
+                    confirmButton = {
+                        TextButton(onClick = { showDialog = false }) {
+                            Text("OK")
+                        }
+                    },
