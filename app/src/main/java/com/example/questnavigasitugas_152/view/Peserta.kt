@@ -21,7 +21,7 @@ data class PesertaData(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ListPesertaScreen(navController: NavController) {
+fun Peserta(navController: NavController) {
     val daftarPeserta = listOf(
         PesertaData("Rina Aulia", "Perempuan", "Belum Menikah", "Bantul"),
         PesertaData("Dimas Fadli", "Laki-laki", "Menikah", "Yogyakarta"),

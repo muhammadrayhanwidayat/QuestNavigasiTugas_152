@@ -11,7 +11,7 @@ import androidx.navigation.NavController
 import com.example.questnavigasitugas_152.R
 
 @Composable
-fun WelcomeScreen(navController: NavController) {
+fun Welcome(navController: NavController) {
     Scaffold { padding ->
         Column(
             modifier = Modifier
