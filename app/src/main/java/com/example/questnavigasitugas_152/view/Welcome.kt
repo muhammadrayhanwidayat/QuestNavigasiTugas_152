@@ -109,3 +109,4 @@ fun FormulirScreen(navController: NavController) {
                     }
                 }
             }
+            Spacer(Modifier.height(8.dp))
