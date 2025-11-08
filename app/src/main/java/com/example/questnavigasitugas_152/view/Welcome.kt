@@ -60,3 +60,18 @@ fun FormulirScreen(navController: NavController) {
                         ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedJK)
                     }
                 )
+                ExposedDropdownMenu(
+                    expanded = expandedJK,
+                    onDismissRequest = { expandedJK = false }
+                ) {
+                    jenisKelaminList.forEach { option ->
+                        DropdownMenuItem(
+                            text = { Text(option) },
+                            onClick = {
+                                jenisKelamin = option
+                                expandedJK = false
+                            }
+                        )
+                    }
+                }
+            }
