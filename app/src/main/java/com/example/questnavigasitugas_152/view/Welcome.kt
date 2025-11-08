@@ -36,3 +36,9 @@ fun FormulirScreen(navController: NavController) {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            OutlinedTextField(
+                value = nama,
+                onValueChange = { nama = it },
+                label = { Text("Nama") },
+                modifier = Modifier.fillMaxWidth()
+            )
