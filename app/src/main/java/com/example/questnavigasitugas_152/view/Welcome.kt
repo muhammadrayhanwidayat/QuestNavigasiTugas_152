@@ -27,3 +27,12 @@ fun FormulirScreen(navController: NavController) {
                     .padding(12.dp)
             ) { Text("Kembali ke Beranda") }
         }
+    ) { padding ->
+        Column(
+            modifier = Modifier
+                .padding(padding)
+                .padding(16.dp)
+                .fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
