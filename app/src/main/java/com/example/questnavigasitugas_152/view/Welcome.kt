@@ -110,3 +110,14 @@ fun FormulirScreen(navController: NavController) {
                 }
             }
             Spacer(Modifier.height(8.dp))
+
+            OutlinedTextField(
+                value = alamat,
+                onValueChange = { alamat = it },
+                label = { Text("Alamat") },
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            Spacer(Modifier.height(16.dp))
+
+            Button(onClick = { showDialog = true }) { Text("Submit") }
