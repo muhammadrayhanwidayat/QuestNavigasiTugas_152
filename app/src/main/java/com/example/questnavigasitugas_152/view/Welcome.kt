@@ -130,3 +130,13 @@ fun FormulirScreen(navController: NavController) {
                             Text("OK")
                         }
                     },
+                    title = { Text("Data Tersimpan") },
+                    text = {
+                        Text("Nama: $nama\nJenis Kelamin: $jenisKelamin\nStatus: $status\nAlamat: $alamat")
+                    }
+                )
+            }
+        }
+    }
+}
+
