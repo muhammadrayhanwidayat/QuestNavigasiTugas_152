@@ -15,3 +15,15 @@ fun FormulirScreen(navController: NavController) {
     val jenisKelaminList = listOf("Laki-laki", "Perempuan")
     val statusList = listOf("Belum Menikah", "Menikah")
 
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(title = { Text("Formulir Pendaftaran") })
+        },
+        bottomBar = {
+            Button(
+                onClick = { navController.navigate("welcome") },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(12.dp)
+            ) { Text("Kembali ke Beranda") }
+        }
