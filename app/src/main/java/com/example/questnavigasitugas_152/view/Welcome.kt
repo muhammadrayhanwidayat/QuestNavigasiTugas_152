@@ -42,3 +42,4 @@ fun FormulirScreen(navController: NavController) {
                 label = { Text("Nama") },
                 modifier = Modifier.fillMaxWidth()
             )
+            Spacer(Modifier.height(8.dp))
