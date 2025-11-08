@@ -43,3 +43,20 @@ fun FormulirScreen(navController: NavController) {
                 modifier = Modifier.fillMaxWidth()
             )
             Spacer(Modifier.height(8.dp))
+
+            ExposedDropdownMenuBox(
+                expanded = expandedJK,
+                onExpandedChange = { expandedJK = !expandedJK }
+            ) {
+                OutlinedTextField(
+                    value = jenisKelamin,
+                    onValueChange = {},
+                    readOnly = true,
+                    label = { Text("Jenis Kelamin") },
+                    modifier = Modifier
+                        .menuAnchor()
+                        .fillMaxWidth(),
+                    trailingIcon = {
+                        ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedJK)
+                    }
+                )
